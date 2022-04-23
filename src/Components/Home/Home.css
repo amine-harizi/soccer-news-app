@@ -1,0 +1,70 @@
+.header {
+  box-sizing: border-box;
+  height: 60px;
+  max-width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--color-primary-2);
+}
+.nav-container {
+  display: flex;
+  gap: 15px;
+}
+.logo-container{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.logo-container:hover{
+    color: var(--color-accent-1);
+}
+.logo-container > img{
+    height: 45px;
+    width:45px;
+}
+.hero-section > a,
+.nav-container > a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  padding: 15px;
+
+}
+.nav-container > a:hover {
+  color: var(--color-accent-1);
+}
+.hero-section > a {
+    display: block;
+    margin-left: 50%;
+    border: 3px solid var(--color-accent-1);
+    border-right-color: transparent;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+.hero-section > a:hover {
+    background-color: var(--color-accent-1);
+}
+.hero-section {
+  width: 100%;
+  max-height: calc(100vh - 60px);
+  position: relative;
+}
+.hero-section svg {
+  height: auto;
+  fill: var(--color-primary-2);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.hero-section h1,
+h2 {
+  margin: 40px;
+}
